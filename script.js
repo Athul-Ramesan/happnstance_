@@ -1,13 +1,10 @@
-const footerLink=document.querySelector('.footer-link-head-1');
 
-const footerDetails=document.querySelectorAll('.footer-text-1');
+let toTop=document.querySelector('.to-top');
 
-footerLink.addEventListener('click',()=>{
-    footerDetails.forEach((element,index)=>{
-        element.classList.toggle('active')
-    })
+
+toTop.addEventListener('click',function topFunction(){
+    document.documentElement.toTop=0;
 })
-const toTop=document.querySelector('.to-top');
-window.addEventListener("scroll",()=>{
-    if(window.pageYOffset>100)   
-})
+
+
+
